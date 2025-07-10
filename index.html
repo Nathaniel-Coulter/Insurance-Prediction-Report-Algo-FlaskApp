@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance Premium Estimator</title>
+    <style>
+        body {
+            background-color: #e6f5f8;
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            font-weight: 600;
+            display: block;
+            margin-top: 20px;
+            color: #222;
+        }
+        select, input[type="number"], input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 8px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .radio-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+        .radio-group label {
+            font-weight: normal;
+        }
+        .radio-group input {
+            margin-right: 5px;
+        }
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .form-row > div {
+            flex: 1;
+        }
+        .submit-button {
+            margin-top: 30px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Insurance Premium Estimator</h1>
+        <form method="POST">
+            <label for="age">1.) What is your age?</label>
+            <select name="age" required>
+                <option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+<option value="32">32</option>
+<option value="33">33</option>
+<option value="34">34</option>
+<option value="35">35</option>
+<option value="36">36</option>
+<option value="37">37</option>
+<option value="38">38</option>
+<option value="39">39</option>
+<option value="40">40</option>
+<option value="41">41</option>
+<option value="42">42</option>
+<option value="43">43</option>
+<option value="44">44</option>
+<option value="45">45</option>
+<option value="46">46</option>
+<option value="47">47</option>
+<option value="48">48</option>
+<option value="49">49</option>
+<option value="50">50</option>
+<option value="51">51</option>
+<option value="52">52</option>
+<option value="53">53</option>
+<option value="54">54</option>
+<option value="55">55</option>
+<option value="56">56</option>
+<option value="57">57</option>
+<option value="58">58</option>
+<option value="59">59</option>
+<option value="60">60</option>
+<option value="61">61</option>
+<option value="62">62</option>
+<option value="63">63</option>
+<option value="64">64</option>
+<option value="65">65</option>
+            </select>
+
+            <label>2.) Please select your gender:</label>
+            <div class="radio-group">
+                <label><input type="radio" name="sex" value="male" required> Male</label>
+                <label><input type="radio" name="sex" value="female"> Female</label>
+                <label><input type="radio" name="sex" value="helicopter"> Boeing AH-64 Apache (Attack Helicopter)</label>
+            </div>
+
+            <label>3.) Height and Weight:</label>
+            <div class="form-row">
+                <div><input type="number" name="feet" placeholder="Feet" required></div>
+                <div><input type="number" name="inches" placeholder="Inches" required></div>
+                <div><input type="number" name="weight" placeholder="Weight (lbs)" required></div>
+            </div>
+
+            <label>4.) Do you have any children?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="children" value="yes" required> Yes</label>
+                <label><input type="radio" name="children" value="no"> No</label>
+            </div>
+
+            <label>5.) Are you a smoker?</label>
+            <div class="radio-group">
+                <label><input type="radio" name="smoker" value="yes" required> Yes</label>
+                <label><input type="radio" name="smoker" value="no"> No</label>
+            </div>
+
+            <label>6.) Please select your region:</label>
+            <select name="region" required>
+                <option value="northeast">Northeast</option>
+                <option value="northwest">Northwest</option>
+                <option value="southeast">Southeast</option>
+                <option value="southwest">Southwest</option>
+            </select>
+
+            <input type="submit" class="submit-button" value="Estimate My Charge">
+        </form>
+    </div>
+</body>
+</html>
